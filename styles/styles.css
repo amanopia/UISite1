@@ -94,6 +94,53 @@ a > i {
 i.exit__icon:hover {
     transform:  scale(2);
 }
+
+/* Dash */
+
 .dash {
+    display: grid;
+    grid-template-rows: 55% 45%;
+    /* gap: 1rem; */
     background-color: var(--color-background-light);
+}
+
+.upper__dash {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.upper__dash > div{
+    background: var(--color-background-dark);
+    border-radius: 20px 20px;
+    transition: var(--transition);
+}
+
+.upper__dash > div:hover {
+    transform: translateY(-4px);
+    filter: drop-shadow(6px 5px 6px rgb(81, 81, 81));
+}
+.dash__item_1 {
+    
+}
+
+.dash__item_2 {
+    
+}
+
+.dash__item_3 {
+
+}
+
+.lower__dash {
+    background-color: var(--color-background);
+    margin: 0 1rem 1rem;
+    border-radius: 20px 20px;
+    transition: var(--transition)
+}
+
+.lower__dash:hover {
+    transform: translateY(-6px);
+    filter: drop-shadow(6px 5px 6px rgb(81, 81, 81))
 }
