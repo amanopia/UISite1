@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: "Poppins";
 }
 
 :root {
@@ -25,4 +28,58 @@
 
 body {
     background: var(--color-background-light);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 18% 82%;
+}
+
+/* Navigation */
+
+nav {
+    background: #fff;
+    height: 100%;
+}
+
+.nav__top {
+    display: grid;
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+
+.logo__image {
+    width: 80%;
+}
+.owner__image {
+    width: 80%;
+    border-radius: 50%;
+}
+
+/* Dashboard */
+.dash__items {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    row-gap: 1em;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1em;
+
+    padding: 1em;
+}
+
+.item__block1 {
+    grid-column: 1/3;
+    padding: 1em;
+    background: var(--color-background-dark);
+    color: #fff;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.numbers .income, .numbers .spendings {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
 }
