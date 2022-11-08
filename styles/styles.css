@@ -12,7 +12,7 @@
 }
 
 :root {
-    --color-icon: #f56518;
+    --color-icon: #fc540c;
     --color-light: #95cfd9;
     --color-background-light: #fff5ee;
     --color-background: #cbb09e;
@@ -99,7 +99,7 @@ i.exit__icon:hover {
 
 .dash {
     display: grid;
-    grid-template-rows: 55% 45%;
+    grid-template-rows: 60% 40%;
     /* gap: 1rem; */
     background-color: var(--color-background-light);
 }
@@ -124,6 +124,9 @@ i.exit__icon:hover {
 .dash__item_1 {
     color: #fff;
     padding: 1.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .dash__item_1 p {
@@ -166,14 +169,85 @@ i.exit__icon:hover {
 
 }
 
+/* LOWER DASH */
 .lower__dash {
     background-color: var(--color-background);
     margin: 0 1rem 1rem;
     border-radius: 20px 20px;
-    transition: var(--transition)
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .lower__dash:hover {
     transform: translateY(-6px);
     filter: drop-shadow(6px 5px 6px rgb(81, 81, 81))
+}
+
+.side__text  {
+    width: 20%;
+    padding: 1em;
+}
+
+.side__text > p:nth-child(odd) {
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.side__text > small:nth-child(even) {
+    display: block;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+
+.sales__notifs {
+    background: #fff;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    width: 14%;
+    height: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sales__numbers {
+    display: flex;
+    font-weight: 600;
+    font-size: 1.8rem
+}
+
+.sales__numbers > p:nth-child(2){
+    font-size: 0.8rem;
+    margin-left: 0.6rem;
+}
+.sales__notifs:nth-child(6) {
+    background-image: linear-gradient(to bottom left, #95dde6, #dedede)
+}
+
+.sales__notifs span {
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    background: var(--color-icon);
+    font-size: 0.7rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 22%;
+}
+
+.sales__notifs .sales__text {
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-top: 1.2rem;
+}
+
+.up {
+    color: #4eff54;
+    transform: rotate(180deg);
+}
+
+.down {
+    color: #bf1414;
 }
