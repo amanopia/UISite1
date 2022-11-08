@@ -169,6 +169,17 @@ i.exit__icon:hover {
 
 }
 
+.color__one {
+    color: var(--color-icon)
+}
+
+.color__two {
+    color: var(--color-light)
+}
+
+.color__three {
+    color: var(--color-background)
+}
 /* LOWER DASH */
 .lower__dash {
     background-color: var(--color-background);
@@ -188,6 +199,7 @@ i.exit__icon:hover {
 .side__text  {
     width: 20%;
     padding: 1em;
+    margin-left: 1rem;
 }
 
 .side__text > p:nth-child(odd) {
@@ -199,6 +211,10 @@ i.exit__icon:hover {
     display: block;
     font-size: 0.6rem;
     line-height: 1rem;
+    font-weight: 400;
+}
+.side__text > small > span {
+    font-weight: 600;
 }
 
 .sales__notifs {
@@ -216,7 +232,8 @@ i.exit__icon:hover {
 .sales__numbers {
     display: flex;
     font-weight: 600;
-    font-size: 1.8rem
+    font-size: 1.8rem;
+    align-items: baseline;
 }
 
 .sales__numbers > p:nth-child(2){
@@ -241,6 +258,10 @@ i.exit__icon:hover {
     font-size: 0.7rem;
     font-weight: 600;
     margin-top: 1.2rem;
+}
+
+.lower__dash:last-child {
+    font-weight: 600;
 }
 
 .up {
