@@ -161,13 +161,6 @@ i.exit__icon:hover {
     font-size: 1.2rem;
     font-weight: 600;
 }
-.dash__item_2 {
-    
-}
-
-.dash__item_3 {
-
-}
 
 .color__one {
     color: var(--color-icon)
@@ -272,3 +265,8 @@ i.exit__icon:hover {
 .down {
     color: #bf1414;
 }
+
+/* tablet size */
+
+
+/* Mobile size */
