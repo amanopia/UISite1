@@ -26,21 +26,23 @@
     --container-width-sm: 90%;
 }
 
+/* Parent Container */
 .container {
     display: grid;
     grid-template-columns: 20% 80%;
     height: 100vh;
 }
 
+/* ------- NAVIGATION ------- */
 .nav {
     padding: 0 2em;
     text-align: center;
     display: grid;
 }
+
 .logo__image {
     justify-self: center;
     width: 75%;
-    /* height: 8rem; */
     height: 6rem;
     object-fit: cover;
 }
@@ -95,7 +97,7 @@ i.exit__icon:hover {
     transform:  scale(2);
 }
 
-/* Dash */
+/* ------- DASH ------- */
 
 .dash {
     display: grid;
@@ -126,6 +128,7 @@ i.exit__icon:hover {
     padding: 1.8em;
     display: flex;
     flex-direction: column;
+    /* justify-content: space between, spaces content to take the whole space of the container */
     justify-content: space-between;
 }
 
@@ -173,7 +176,7 @@ i.exit__icon:hover {
 .color__three {
     color: var(--color-background)
 }
-/* LOWER DASH */
+/* ------- LOWER DASH -------*/
 .lower__dash {
     background-color: var(--color-background);
     margin: 0 1rem 1rem;
@@ -189,17 +192,20 @@ i.exit__icon:hover {
     filter: drop-shadow(6px 5px 6px rgb(81, 81, 81))
 }
 
+/* ------- SIDE TEXT ------- */
 .side__text  {
     width: 20%;
     padding: 1em;
     margin-left: 1rem;
 }
 
+/* Giving the engagement word a margin bottom */
 .side__text > p:nth-child(odd) {
     font-weight: 600;
     margin-bottom: 3rem;
 }
 
+/* Giving display as block helps set the line height of the text */
 .side__text > small:nth-child(even) {
     display: block;
     font-size: 0.6rem;
@@ -210,18 +216,22 @@ i.exit__icon:hover {
     font-weight: 600;
 }
 
+/* ------- SALES NOTIFICATIONS ------- */
 .sales__notifs {
     background: #fff;
     padding: 1.2rem;
     border-radius: 1.2rem;
     width: 14%;
     height: 60%;
+    /* Before making the icons inside the div absolute, assign the container the property of relative */
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+/* Giving numbers a display of flex, helps align number and the arrow on a common axis */
+/* Baseline sets the arrows on a common axis */
 .sales__numbers {
     display: flex;
     font-weight: 600;
@@ -229,14 +239,18 @@ i.exit__icon:hover {
     align-items: baseline;
 }
 
+/* Adjusting the size of the arrow icon */
 .sales__numbers > p:nth-child(2){
     font-size: 0.8rem;
     margin-left: 0.6rem;
 }
+
+/* Making changes to the last card */
 .sales__notifs:nth-child(6) {
     background-image: linear-gradient(to bottom left, #95dde6, #dedede)
 }
 
+/* Targeting the spans containing the icons, marked in the orange */
 .sales__notifs span {
     position: absolute;
     top: -10px;
@@ -257,6 +271,7 @@ i.exit__icon:hover {
     font-weight: 600;
 }
 
+/* Coloring the arrows */
 .up {
     color: #4eff54;
     transform: rotate(180deg);
