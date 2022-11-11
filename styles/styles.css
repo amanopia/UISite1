@@ -282,6 +282,11 @@ i.exit__icon:hover {
 }
 
 /* tablet size */
-
+@media screen and (max-width: 1024px)  {
+    
+}
 
 /* Mobile size */
+@media screen and (max-width: 600px)  {
+
+}
